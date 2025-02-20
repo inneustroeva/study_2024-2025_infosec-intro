@@ -14,9 +14,10 @@ FORMAT_OPTIONS =
 ## System-wide pandoc-xnos
 # FILTERS += --filter pandoc-fignos --filter pandoc-eqnos --filter pandoc-tablenos --filter pandoc-secnos
 ## Use pandoc-crossref (https://github.com/lierdakil/pandoc-crossref)
-#FILTERS += --filter pandoc-crossref
+FILTERS += --filter pandoc-crossref
 ###
-PDF_ENGINE += --pdf-engine=lualatex --pdf-engine-opt=--shell-escape
+#PDF_ENGINE += --pdf-engine=lualatex --pdf-engine-opt=--shell-escape
+PDF_ENGINE += --pdf-engine=xelatex --pdf-engine-opt=--shell-escape
 OPTIONS += --number-sections
 BIB_OPTIONS = --citeproc
 PDF_BIB_OPTIONS = --citeproc
